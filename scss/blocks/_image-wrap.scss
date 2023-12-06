@@ -1,0 +1,46 @@
+.image-wrap__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 0;
+  background-color: $accent;
+    & span {
+      margin-bottom: 10px;
+      color: #fff; 
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 20px; /* 100% */
+      letter-spacing: 1.6px;
+    }
+}
+
+.image-wrap__image {
+  height: 114vw;
+  background-image: url('../img/collage-of-finance-banner-concept.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media(min-width: 768px) {
+  .image-wrap {
+    width: 45%;
+    flex-shrink: 0;
+  }
+
+  .image-wrap__header {
+    padding: 1vw 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+      & span {
+        margin-bottom: 0;
+        margin-right: 2vw;
+        font-size: 1vw;
+      }
+  }
+
+  .image-wrap__image {
+    height: 50vw;
+  }
+}

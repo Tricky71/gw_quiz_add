@@ -1,0 +1,15 @@
+.shield {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+    & img {
+      max-height: 100%;
+      width: auto;
+    }
+}
+
+

@@ -1,0 +1,85 @@
+.button__quiz {
+  box-sizing: border-box;
+  position: relative;
+  background: #6767AF;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 0.8px;
+    &--request {
+      padding: 8px 30px;
+      border-radius: 12px 0px 0px 12px;
+      align-self: start;
+        &:hover {
+          background-color: #fff;
+          color: #6767AF;
+          outline: 1px solid #6767AF;
+          outline-offset:-1px;
+          &::after {
+            background-color: #6767AF;
+            color: #fff;
+          }
+        }
+        &::after {
+          position: absolute;
+          content: '»';
+          padding-bottom: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          bottom: 0;
+          right: -45px;
+          width: 45px;
+          outline: 1px solid #6767AF;
+          outline-offset:-1px;
+          color: #6767AF;
+          font-weight: 300;
+          font-size: 35px;
+          border-bottom-right-radius: 12px;
+          border-top-right-radius: 12px;
+        }
+    }
+    &--call {
+      padding: 10px 30px;
+      font-size: 14px;
+      border-radius: 12px;
+        &:hover {
+          background-color: #fff;
+          color: #6767AF;
+          outline: 1px solid #6767AF;
+          outline-offset:-1px;
+          outline: none;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+  .button__quiz {
+    font-size: .83vw;
+    line-height: 2;
+      &--request {
+        padding: .78vw 3.13vw;
+        border-bottom-left-radius: .63vw;
+        border-top-left-radius: .63vw;
+          &:hover {
+            outline: 0.05vw solid #6767af;
+            outline-offset: -0.08vw;
+          }
+          &::after {
+            right: -3.39vw;
+            width: 3.39vw;
+            font-size: 1.82vw;
+            outline: 0.05vw solid #6767af;
+            outline-offset: -0.08vw;
+            border-bottom-right-radius: .63vw;
+            border-top-right-radius: .63vw;
+          }
+      }
+      &--call {
+        padding: .52vw 1.56vw;
+        border-radius: .63vw;
+      }
+  }
+}

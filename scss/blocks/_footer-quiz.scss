@@ -1,0 +1,29 @@
+.footer-quiz {
+  padding: 15px 0 30px;
+  width: 100%;
+  flex-shrink: 0;
+  background-color: $accent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+}
+
+.footer-quiz__wrapper {
+  padding: 0 15px;
+}
+
+@media(min-width: 768px) {
+  .footer-quiz {
+    padding-top: 1vw;
+    padding-bottom: 1.72vw;
+    font-size: .73vw;
+    text-align: center;
+  }
+}

@@ -44,3 +44,19 @@
     height: 48vw;
   }
 }
+
+@media(min-width: 1920px) {
+  .image-wrap__header {
+    padding: 16px 0;
+      & span {
+        // margin-bottom: 0;
+        margin-right: 40px;
+        font-size: 20px;
+    }
+  }
+
+  .image-wrap__image {
+      height: 92%;
+  }
+  
+}

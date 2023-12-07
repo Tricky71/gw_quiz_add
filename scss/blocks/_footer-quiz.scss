@@ -27,3 +27,12 @@
     text-align: center;
   }
 }
+
+@media(min-width: 1920px) {
+  .footer-quiz {
+    padding-top: 19px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    // text-align: center;
+  }
+}
